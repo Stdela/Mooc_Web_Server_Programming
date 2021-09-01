@@ -8,3 +8,8 @@ These are separated by a comma.
 For example, the request /greet?greeting=Greetings&name=Earthlingreturns a string Greetings, Earthling. 
 Similarly, the request /greet?greeting=Oi&name=Matereturns a string Oi, Mate. 
 The order of the parameters does not matter.
+
+3. Implement hellorequestparamsthe HelloRequestParamsControllerfollowing functionality for the class in the package :
+
+The request to the path /helloreturns to the user the string "Hello" with paramthe value contained in the parameter named.
+The request to path /paramsreturns the names and values of all parameters included in the request to the user.
