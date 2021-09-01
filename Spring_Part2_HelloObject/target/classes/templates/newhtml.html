@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>No se que es esto</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Hola</h1>
+        <ol>
+            <li th:each="item : ${list}">
+                <span th:text="${item.object}">Esimerkkihenkilö</span> ( <span th:text="${item.adjective}"> joeMama</span> )
+            </li>
+        </ol>
+        <br><br>
+        <h2>Add Object</h2><br>
+             <form th:action="@{/hola}" method="POST">
+                 <span>Object:</span>
+                 <input type="text" name="object">
+                 <span>Adjective</span>
+                 <input type="text" name="adjective">
+                 <input type="submit" name="Add!">
+        </form>
+    </body>
+</html>

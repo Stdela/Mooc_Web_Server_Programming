@@ -1,0 +1,14 @@
+{
+    "elements": {},
+    "attributes": {
+        "th:text": {
+            "context": "span"
+        },
+        "th:action": {
+            "context": "form"
+        },
+        "th:each": {
+            "context": "li"
+        }
+    }
+}
