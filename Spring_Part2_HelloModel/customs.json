@@ -1,0 +1,8 @@
+{
+    "elements": {},
+    "attributes": {
+        "th:text": {
+            "context": "h2"
+        }
+    }
+}
