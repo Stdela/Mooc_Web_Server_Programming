@@ -1,4 +1,4 @@
-he task template has functionality that allows information to be displayed on the page, and also allows information sent from the page to be processed. 
+The task template has functionality that allows information to be displayed on the page, and also allows information sent from the page to be processed. 
 However, a form is required to submit the information to the page.
 
 Execute src/main/resources/templatesthe index.htmlform in the file in the task folder . 
