@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>First Database!</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Welcome!</h1>
+        <h2>Titles that you've written so far</h2>
+        <ol >
+            <li th:each="element : ${list}" th:text="${element.item}">first</li>
+
+        </ol>
+        <form th:action="@{/}"method="POST">
+            <label for="item">Insert Item</label>
+            <input type="text" name="name"/>
+            <input type="submit" name="Send that thingy"/>
+        </form>
+    </body>
+</html>
