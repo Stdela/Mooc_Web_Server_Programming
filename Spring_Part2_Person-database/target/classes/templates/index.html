@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Person database</title>
+        <meta charset="UTF-8">
+     
+    </head>
+    <body>
+        <h1>Buen día!</h1>
+        <h2>List of names</h2>
+        <ol>
+            <li th:each = "element: ${list}" th:text="$element.name">first</li>
+            <li th:each = "element: ${list}" th:text="$element.surname">item</li>
+
+        </ol>
+        <h3>Add person?</h3>
+        <form th:action="@{/}" method="POST">
+            <input type="text" name="name">
+                <input type="texy" name="surname">
+                    <input type="submit" name="name">
+        </form>
+        
+    </body>
+</html>
