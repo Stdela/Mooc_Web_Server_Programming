@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Task</title>
+        <meta charset="UTF-8">
+        
+    </head>
+    <body>
+        <h3 th:text="${task.task}" >title</h3>
+        <span>Element has been visited </span> <span th:text="${task.visits}">text</span> <span > times. </span>
+        <a th:href="@{/}">Back to listing.</a>
+    </body>
+</html>
