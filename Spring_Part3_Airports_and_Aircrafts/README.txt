@@ -8,7 +8,8 @@ Add an appropriate annotation to the connection and define the connection so tha
 Airport setting for an airplane
 Add functionality to the app to add an airport to an airplane. The user interface already contains the necessary functionality, so AircraftControllera new method for the controller class must be implemented here . Use as the method name assignAirportand return type String. When a user adds an airport to an aircraft, the user interface sends a POST-type query to the address /aircrafts/{aircraftId}/airportswhere the aircraftIdaircraft database ID is located. The request is accompanied by a request parameter airportIdthat contains the airport database ID.
 
-Implement the method by first retrieving the airplane and airport using the IDs obtained in the request, then setting the airplane to the airplane and the airplane to the airport, and finally saving the airplane.
+Implement the method by first retrieving the airplane and airport using the IDs obtained in the request, then setting the airplane to the airplane and the airplane to the airport,
+and finally saving the airplane.
 
 Finally, redirect the request to /aircrafts
 
