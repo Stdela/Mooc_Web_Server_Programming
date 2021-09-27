@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Welcome!</title>
+        <meta charset="UTF-8">
+
+    </head>
+    <body>
+        <h1>Accounts in this bank</h1>
+        <ul>
+            <li th:each="acc : ${client} ">
+                <a th:href="@{welcome/{id}(id = ${acc.id})}"> 
+                    <span th:text="${acc.name}">text</span> <span th:text="${acc.accounts}">text</span>
+                </a>
+            </li>
+        </ul>
+        <h2>Add a bank Account</h2>
+        <form th:action="@{/welcome}" method="POST">
+            <!--/{id}(id=$acc.id) -->
+            <input type="text" name="name">
+                <input type="text" name="accountName">
+                    <input type="submit" name="Create!">
+                        </form>
+                        </body>
+                        </html>
