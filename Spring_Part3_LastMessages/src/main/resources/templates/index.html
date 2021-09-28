@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Last Messages</title>
+        <meta charset="UTF-8">
+       
+    </head>
+    <body>
+        <h1>Last 5 Messages!</h1>
+        <ol>
+            <li th:each="text : ${message}" th:text="${text.message}">first</li>
+         
+        </ol>
+        <form th:action="@{/}" method="POST">
+            <input th:type="text" name="text">
+                <input type="submit" name="Send it!">
+                       
+            
+        </form>
+    </body>
+</html>
